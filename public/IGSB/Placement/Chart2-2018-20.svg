@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="603" height="419" viewBox="0 0 603 419">
+  <defs>
+    <filter id="Ellipse_5" x="12" y="12" width="410" height="407" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_88" x="0" y="0" width="410" height="407" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-2"/>
+      <feFlood flood-color="#f6f6f6"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_40" data-name="Group 40" transform="translate(-158 -866)">
+    <text id="Marketing" transform="translate(659 1025)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Marketing</tspan></text>
+    <text id="Finance" transform="translate(659 1059)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Finance</tspan></text>
+    <text id="OSCM" transform="translate(659 1095)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">OSCM</tspan></text>
+    <text id="HRM" transform="translate(659 1131)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">HRM</tspan></text>
+    <g id="Component_1_8" data-name="Component 1 – 8" transform="translate(185 893)">
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Ellipse_5)">
+        <ellipse id="Ellipse_5-2" data-name="Ellipse 5" cx="184" cy="182.5" rx="184" ry="182.5" transform="translate(27 27)" fill="#e6eaee"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Path_88)">
+        <path id="Path_88-2" data-name="Path 88" d="M184,0C285.62,0,368,81.708,368,182.5S285.62,365,184,365,0,283.292,0,182.5,82.38,0,184,0Z" transform="translate(27 27)" fill="#fff"/>
+      </g>
+    </g>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(633 1008)" fill="#007ab0"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="9.5" cy="9.5" r="9.5" transform="translate(633 1044)" fill="#00ada1"/>
+    <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(633 1079)" fill="#3a1c55"/>
+    <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(633 1115)" fill="#b36fa8"/>
+    <text id="_52_" data-name="52%" transform="translate(278 1164)" fill="#007ab0" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">52%</tspan></text>
+    <text id="_2_" data-name="2%" transform="translate(349 973)" fill="#b36fa8" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">2%</tspan></text>
+    <text id="_5_" data-name="5%" transform="translate(305 988)" fill="#3a1c55" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">5%</tspan></text>
+    <text id="_41_" data-name="41%" transform="translate(432 1034)" fill="#00ada1" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">41%</tspan></text>
+    <path id="Path_98" data-name="Path 98" d="M174.145,8.572v43.54a131.181,131.181,0,0,0-18.17,1.26l-6.06-43.1a183.606,183.606,0,0,1,24.23-1.7" transform="translate(195.862 892.663)" fill="#b36fa8"/>
+    <path id="Path_99" data-name="Path 99" d="M155.975,53.372a129.547,129.547,0,0,0-39.09,11.92L97.815,26.2a165.143,165.143,0,0,1,52.1-15.93Z" transform="translate(195.862 892.663)" fill="#3a1c55"/>
+    <path id="Path_100" data-name="Path 100" d="M268.985,328.732A174.126,174.126,0,1,1,79.315,36.662a160.3,160.3,0,0,1,18.5-10.46l19.07,39.09a131.016,131.016,0,1,0,128.82,227.6Z" transform="translate(195.862 892.663)" fill="#007ab0"/>
+    <path id="Path_101" data-name="Path 101" d="M348.275,182.7c0,61.54-27.68,112.51-79.29,146.03l-23.28-35.84a131.009,131.009,0,0,0-71.5-240.78h-.06V8.572A174.129,174.129,0,0,1,348.275,182.7" transform="translate(195.862 892.663)" fill="#00ada1"/>
+  </g>
+</svg>

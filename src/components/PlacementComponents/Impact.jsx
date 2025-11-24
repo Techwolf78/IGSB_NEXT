@@ -69,7 +69,7 @@ export default function Impact() {
     <section ref={sectionRef} className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold  mb-12">
           Our Impact in Numbers
         </h2>
 
@@ -88,7 +88,7 @@ export default function Impact() {
             <h3 className="text-4xl font-bold text-secondary mb-2">
               ₹{counts[0].toFixed(0)} LPA
             </h3>
-            <p className="text-lg font-semibold text-primary mb-2">
+            <p className="text-lg font-semibold text-secondary mb-2">
               Highest Package
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function Impact() {
             <h3 className="text-4xl font-bold text-secondary mb-2">
               ₹{counts[1].toFixed(2)} LPA
             </h3>
-            <p className="text-lg font-semibold text-primary mb-2">
+            <p className="text-lg font-semibold text-secondary mb-2">
               Average Package
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function Impact() {
             <h3 className="text-4xl font-bold text-secondary mb-2">
               {Math.floor(counts[2])}+
             </h3>
-            <p className="text-lg font-semibold text-primary mb-2">
+            <p className="text-lg font-semibold text-secondary mb-2">
               Recruiting Companies
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function Impact() {
             <h3 className="text-4xl font-bold text-secondary mb-2">
               {Math.floor(counts[3])}%
             </h3>
-            <p className="text-lg font-semibold text-primary mb-2">
+            <p className="text-lg font-semibold text-secondary mb-2">
               Placement Assistance
             </p>
           </div>

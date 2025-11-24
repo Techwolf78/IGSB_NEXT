@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="465" height="305" viewBox="0 0 465 305">
+  <defs>
+    <filter id="Ellipse_5" x="237" y="12" width="228" height="228" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_6" x="225" y="0" width="228" height="228" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-2"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_30" x="247.5" y="20.5" width="195" height="195" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur-3"/>
+      <feFlood flood-color="#00a7c5" flood-opacity="0.588"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_5-2" x="12" y="12" width="228" height="228" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_6-2" x="0" y="0" width="228" height="228" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-5"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_73" x="22.981" y="21.987" width="194.668" height="194.668" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur-6"/>
+      <feFlood flood-color="#b36fa8"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_31" data-name="Group 31" transform="translate(26.526 27)">
+    <g id="Group_26" data-name="Group 26" transform="translate(225 0)">
+      <g id="Group_25" data-name="Group 25" transform="translate(0 0)">
+        <text id="Average_Package" data-name="Average
+Package" transform="translate(90.474 229)" fill="#007ab0" font-size="26" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-61" y="0">AVERAGE</tspan><tspan x="-63" y="39">PACKAGE</tspan></text>
+        <g id="Component_1_13" data-name="Component 1 – 13" transform="translate(0.474 0)">
+          <g transform="matrix(1, 0, 0, 1, -252, -27)" filter="url(#Ellipse_5)">
+            <circle id="Ellipse_5-3" data-name="Ellipse 5" cx="93" cy="93" r="93" transform="translate(252 27)" fill="#e6eaee"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -252, -27)" filter="url(#Ellipse_6)">
+            <circle id="Ellipse_6-3" data-name="Ellipse 6" cx="93" cy="93" r="93" transform="translate(252 27)" fill="#e6eaee"/>
+          </g>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -251.53, -27)" filter="url(#Rectangle_30)">
+        <rect id="Rectangle_30-2" data-name="Rectangle 30" width="162" height="162" rx="81" transform="translate(264 37)" fill="#00a7c5"/>
+      </g>
+      <text id="_5.97_LPA" data-name="5.97 LPA" transform="translate(91.474 76)" fill="#fff" font-size="26" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-52" y="0">5.97 LPA</tspan></text>
+      <g id="Group_13" data-name="Group 13" transform="translate(74.546 97.139)">
+        <rect id="Rectangle_27" data-name="Rectangle 27" width="10.177" height="22.96" transform="translate(0 28.184)" fill="#fff"/>
+        <rect id="Rectangle_26" data-name="Rectangle 26" width="10.177" height="34.014" transform="translate(13.769 17.13)" fill="#fff"/>
+        <rect id="Rectangle_25" data-name="Rectangle 25" width="9.578" height="22.96" transform="translate(27.537 28.184)" fill="#fff"/>
+        <path id="Icon_awesome-long-arrow-alt-left" data-name="Icon awesome-long-arrow-alt-left" d="M9.321,10.436H30.313a.834.834,0,0,0,.834-.834V5.709a.834.834,0,0,0-.834-.834H9.321v-3.2A1.669,1.669,0,0,0,6.472.492L.489,6.475a1.669,1.669,0,0,0,0,2.36l5.983,5.983a1.669,1.669,0,0,0,2.849-1.18Z" transform="translate(34.431 15.31) rotate(180)" fill="#fff"/>
+      </g>
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M88.5,177a88.086,88.086,0,0,1-49.481-15.115A88.759,88.759,0,0,1,6.955,122.948a88.384,88.384,0,0,1,8.16-83.929A88.757,88.757,0,0,1,54.052,6.955a88.385,88.385,0,0,1,83.93,8.16,88.758,88.758,0,0,1,32.064,38.937,88.383,88.383,0,0,1-8.16,83.93,88.76,88.76,0,0,1-38.938,32.064A87.946,87.946,0,0,1,88.5,177ZM88.4,4.4a84.1,84.1,0,0,0-84,84V88.6a84.1,84.1,0,0,0,84,84H88.6a84.1,84.1,0,0,0,84-84V88.4a84.1,84.1,0,0,0-84-84Z" transform="translate(5.474 3)" fill="#fff"/>
+    </g>
+    <g id="Group_27" data-name="Group 27" transform="translate(0 0)">
+      <g id="Group_24" data-name="Group 24" transform="translate(0 0)">
+        <text id="Highest_Package" data-name="Highest
+Package" transform="translate(91.474 230)" fill="#3a1c55" font-size="26" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-55" y="0">HIGHEST</tspan><tspan x="-63" y="39">PACKAGE</tspan></text>
+        <g id="Component_1_14" data-name="Component 1 – 14" transform="translate(0.474 0)">
+          <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Ellipse_5-2)">
+            <circle id="Ellipse_5-4" data-name="Ellipse 5" cx="93" cy="93" r="93" transform="translate(27 27)" fill="#e6eaee"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Ellipse_6-2)">
+            <circle id="Ellipse_6-4" data-name="Ellipse 6" cx="93" cy="93" r="93" transform="translate(27 27)" fill="#e6eaee"/>
+          </g>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -26.53, -27)" filter="url(#Path_73)">
+        <path id="Path_73-2" data-name="Path 73" d="M80.834,0A80.834,80.834,0,1,1,0,80.834,80.834,80.834,0,0,1,80.834,0Z" transform="translate(39.48 38.49)" fill="#3a1c55"/>
+      </g>
+      <g id="Group_12" data-name="Group 12" transform="translate(76.123 94.998)">
+        <rect id="Rectangle_22" data-name="Rectangle 22" width="8.565" height="17.13" transform="translate(0 37.375)" fill="#fff"/>
+        <rect id="Rectangle_23" data-name="Rectangle 23" width="8.565" height="25.696" transform="translate(12.848 28.81)" fill="#fff"/>
+        <rect id="Rectangle_24" data-name="Rectangle 24" width="8.565" height="34.261" transform="translate(25.696 20.245)" fill="#fff"/>
+        <path id="Icon_awesome-long-arrow-alt-left-2" data-name="Icon awesome-long-arrow-alt-left" d="M8.462,9.475H27.52a.757.757,0,0,0,.757-.757V5.183a.757.757,0,0,0-.757-.757H8.462V1.518A1.515,1.515,0,0,0,5.876.447L.444,5.879a1.515,1.515,0,0,0,0,2.142l5.432,5.432a1.515,1.515,0,0,0,2.586-1.071Z" transform="translate(32.864 12.038) rotate(150)" fill="#fff"/>
+      </g>
+      <text id="_11.00_LPA" data-name="11.00 LPA" transform="translate(93.474 78)" fill="#fff" font-size="27" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-56" y="0">11.00 LPA</tspan></text>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M88.5,177a88.086,88.086,0,0,1-49.481-15.115A88.759,88.759,0,0,1,6.955,122.948a88.384,88.384,0,0,1,8.16-83.929A88.757,88.757,0,0,1,54.052,6.955a88.385,88.385,0,0,1,83.93,8.16,88.758,88.758,0,0,1,32.064,38.937,88.383,88.383,0,0,1-8.16,83.93,88.76,88.76,0,0,1-38.938,32.064A87.946,87.946,0,0,1,88.5,177ZM88.4,4.4a84.1,84.1,0,0,0-84,84V88.6a84.1,84.1,0,0,0,84,84H88.6a84.1,84.1,0,0,0,84-84V88.4a84.1,84.1,0,0,0-84-84Z" transform="translate(5.474 4)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
