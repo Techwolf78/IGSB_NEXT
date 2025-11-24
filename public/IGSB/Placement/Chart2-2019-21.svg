@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="603" height="419" viewBox="0 0 603 419">
+  <defs>
+    <filter id="Ellipse_5" x="12" y="12" width="410" height="407" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_88" x="0" y="0" width="410" height="407" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-2"/>
+      <feFlood flood-color="#f6f6f6"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_39" data-name="Group 39" transform="translate(-158 -866)">
+    <text id="Marketing" transform="translate(659 1065)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Marketing</tspan></text>
+    <text id="Finance" transform="translate(659 1100)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Finance</tspan></text>
+    <g id="Component_1_12" data-name="Component 1 – 12" transform="translate(185 893)">
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Ellipse_5)">
+        <ellipse id="Ellipse_5-2" data-name="Ellipse 5" cx="184" cy="182.5" rx="184" ry="182.5" transform="translate(27 27)" fill="#e6eaee"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Path_88)">
+        <path id="Path_88-2" data-name="Path 88" d="M184,0C285.62,0,368,81.708,368,182.5S285.62,365,184,365,0,283.292,0,182.5,82.38,0,184,0Z" transform="translate(27 27)" fill="#fff"/>
+      </g>
+    </g>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(633 1048)" fill="#007ab0"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="9.5" cy="9.5" r="9.5" transform="translate(633 1084)" fill="#00ada1"/>
+    <text id="_26_" data-name="26%" transform="translate(408 1018)" fill="#00ada1" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">26%</tspan></text>
+    <text id="_48_" data-name="48%" transform="translate(272 1155)" fill="#007ab0" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">48%</tspan></text>
+    <path id="Path_108" data-name="Path 108" d="M359.615,601.672a174.124,174.124,0,1,1-173.7-186.27v42.71a131,131,0,1,0,130.94,140.57Z" transform="translate(184.091 485.972)" fill="#007ab0"/>
+    <path id="Path_109" data-name="Path 109" d="M360.035,589.522c0,4.43-.11,7.74-.42,12.15l-42.76-2.99q.345-4.74.35-9.57a131,131,0,0,0-131-131h-.29V415.4a174.125,174.125,0,0,1,174.12,174.12" transform="translate(184.091 485.972)" fill="#00ada1"/>
+  </g>
+</svg>

@@ -10,21 +10,33 @@ import Testimonials from "@/components/PlacementComponents/Testimonials";
 import PlacementInformation from "@/components/PlacementComponents/PlacementInformation";
 import Upskilling from "@/components/PlacementComponents/Upskilling";
 import PlacementCarousel from "@/components/PlacementComponents/PlacementCarousel";
+import RecruitersSection from "@/components/home/RecruiterSection";
+import PlacementRecords from "@/components/PlacementComponents/PlacementRecords";
+import PlacementOrientation from "@/components/PlacementComponents/PlacementOrientation";
+import PlacementIndustryVisit from "@/components/PlacementComponents/PlacementIndustryVisit";
+import PlacementCell from "@/components/PlacementComponents/PlacementCell";
 
 function Placement() {
   return (
     <div className="w-full bg-white">
-      <PlacementCarousel/>
-      <Typingsection />
+      {/* <PlacementCarousel/> */}
+      {/* <Typingsection /> */}
       <Impact />
-      <Companies />
-      <ResearchLab />
-      <Career /> {/* Add logos etc here */}
+      <RecruitersSection />
+      {/* <ResearchLab />  */}
+      <Career /> 
       <CASsection />
-      <TrainingOverview />
-      <Upskilling />
-      <Testimonials />
-      <PlacementInformation /> {/* All the extra content goes here */}
+      <PlacementRecords />
+      <PlacementOrientation />
+      <PlacementIndustryVisit />
+      <PlacementCell />
+      {/* <Companies /> */}
+
+
+      {/* <TrainingOverview /> */}
+      {/* <Upskilling /> */}
+      {/* <Testimonials /> */}
+      {/* <PlacementInformation />  */}
     </div>
   );
 }

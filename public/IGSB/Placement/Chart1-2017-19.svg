@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="693" height="419" viewBox="0 0 693 419">
+  <defs>
+    <filter id="Ellipse_5" x="12" y="12" width="410" height="407" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_88" x="0" y="0" width="410" height="407" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-2"/>
+      <feFlood flood-color="#f6f6f6"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_32" data-name="Group 32" transform="translate(-996 -881)">
+    <text id="BFSI" transform="translate(1488 1007)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">BFSI</tspan></text>
+    <text id="IT_ITES" data-name="IT &amp; ITES" transform="translate(1488 1043)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">IT &amp; ITES</tspan></text>
+    <text id="Manufacturing" transform="translate(1488 1078)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Manufacturing</tspan></text>
+    <text id="FMCG_Retail" data-name="FMCG/Retail" transform="translate(1488 1113)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">FMCG/Retail</tspan></text>
+    <text id="Business_Consulting" data-name="Business Consulting" transform="translate(1486 1149)" font-size="20" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Business Consulting</tspan></text>
+    <g id="Component_1_3" data-name="Component 1 – 3" transform="translate(1023 908)">
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Ellipse_5)">
+        <ellipse id="Ellipse_5-2" data-name="Ellipse 5" cx="184" cy="182.5" rx="184" ry="182.5" transform="translate(27 27)" fill="#e6eaee"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Path_88)">
+        <path id="Path_88-2" data-name="Path 88" d="M184,0C285.62,0,368,81.708,368,182.5S285.62,365,184,365,0,283.292,0,182.5,82.38,0,184,0Z" transform="translate(27 27)" fill="#fff"/>
+      </g>
+    </g>
+    <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(1460 1097)" fill="#007ab0"/>
+    <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(1460 990)" fill="#3a1c55"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="9.5" cy="9.5" r="9.5" transform="translate(1460 1026)" fill="#b36fa8"/>
+    <ellipse id="Ellipse_10" data-name="Ellipse 10" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(1460 1136)" fill="#00ada1"/>
+    <ellipse id="Ellipse_13" data-name="Ellipse 13" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(1460 1061)" fill="#aed6eb"/>
+    <text id="_16_" data-name="16%" transform="translate(1080 1100)" fill="#00ada1" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">16%</tspan></text>
+    <text id="_4_" data-name="4%" transform="translate(1187 987)" fill="#b36fa8" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">4%</tspan></text>
+    <text id="_6_" data-name="6%" transform="translate(1109 1034)" fill="#007ab0" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">6%</tspan></text>
+    <text id="_68_" data-name="68%" transform="translate(1265 1140)" fill="#3a1c55" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">68%</tspan></text>
+    <text id="_6_2" data-name="6%" transform="translate(1143 1003)" fill="#aed6eb" font-size="28" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">6%</tspan></text>
+    <path id="Path_89" data-name="Path 89" d="M578.33,0V45.76a130.579,130.579,0,0,0-33.77,4.47L532.71,6.01A176.473,176.473,0,0,1,578.33,0" transform="translate(629.011 914.235)" fill="#b36fa8"/>
+    <path id="Path_91" data-name="Path 91" d="M544.56,50.23a130.2,130.2,0,0,0-42.91,20.5L474.72,33.66A165.184,165.184,0,0,1,532.71,6.01Z" transform="translate(629.011 914.235)" fill="#aed6eb"/>
+    <path id="Path_93" data-name="Path 93" d="M501.65,70.73a131.481,131.481,0,0,0-34.02,36.37L428.84,82.86a173.038,173.038,0,0,1,45.88-49.2Z" transform="translate(629.011 914.235)" fill="#007ab0"/>
+    <path id="Path_95" data-name="Path 95" d="M447.59,176.76a130.472,130.472,0,0,0,12.01,54.87l-41.02,19.13c-26.05-55.85-22.39-115.64,10.26-167.9l38.79,24.24a130.337,130.337,0,0,0-20.04,69.66" transform="translate(629.011 914.235)" fill="#00ada1"/>
+    <path id="Path_97" data-name="Path 97" d="M754.59,176.27A176.267,176.267,0,0,1,578.33,352.53c-71.26,0-129.64-37.19-159.75-101.77l41.02-19.13A131.014,131.014,0,1,0,578.94,45.76h-.61V0A176.269,176.269,0,0,1,754.59,176.27" transform="translate(629.011 914.235)" fill="#3a1c55"/>
+  </g>
+</svg>
