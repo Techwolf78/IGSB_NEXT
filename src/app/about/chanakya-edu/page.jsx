@@ -363,7 +363,7 @@ const ChanakyaEdu = () => {
                 <div className="relative">
                   <div className="w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 border-4 border-white shadow-lg overflow-hidden">
                     <Image
-                      src="/banners/dr-virendra-tatake.jpg"
+                      src="/banners/Dr-Virendra-Tatake.jpg"
                       alt="Dr. Virendra Tatake"
                       width={256}
                       height={256}
