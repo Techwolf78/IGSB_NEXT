@@ -198,13 +198,10 @@ const Navbar = () => {
           title: "MBA",
           items: [
             {
-              label: "Program Details/ Orientation",
+              label: "Programme & Admission",
               link: "/programs/mba",
             },
-            {
-              label: "Admissions",
-              link: "/programs/mba",
-            },
+
             {
               label: "Human Capital/ Intellectual Capital",
               link: "/programs/mba",
@@ -476,10 +473,10 @@ const Navbar = () => {
               Placement
             </Link>
             <Link
-              href="/about/examination"
+              href="/nism"
               className="hover:text-secondary  px-5  transition-colors duration-200 group"
             >
-              Examination
+              NISM
             </Link>
             <Link
               href="/alumni"

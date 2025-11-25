@@ -6,9 +6,29 @@ import Image from "next/image";
 // ================== SYLLABUS DATA ==================
 const syllabusList = [
   {
-    id: "sybtech",
+    id: "mba",
     label: "MBA",
-    pdf: "/Programs/IT/SE.pdf",
+    pdf: "/IGSB/Programmes/MBA_NEP.pdf",
+  },
+];
+
+const araList = [
+  {
+    id: "ara",
+    label: "ARA",
+    pdf: "/IGSB/Programmes/ARA.pdf",
+  },
+];
+const examList = [
+  {
+    id: "academic-calendar",
+    label: "Academic Calendar 23-24",
+    pdf: "/IGSB/Programmes/AcademicCalendar.pdf",
+  },
+  {
+    id: "sppu-academic-calendar",
+    label: "SPPU Academic Calendar 23-24",
+    pdf: "/IGSB/Programmes/SPPUAcademicCalendar.pdf",
   },
 ];
 
@@ -88,6 +108,10 @@ export default function FAQENTC() {
         ],
       },
     },
+    "Syllabus & Course Structure": {
+      type: "syllabus",
+      content: syllabusList,
+    },
     "Fee Structure": {
       type: "accordion",
       content: {
@@ -142,29 +166,114 @@ export default function FAQENTC() {
       },
     },
 
-    "Admission Procedure": {
-      type: "notice",
-      content: "Admission procedure details will be updated soon.",
-    },
-
-    "Sanctioned Intake": {
+    Admission: {
       type: "table",
       content: [
         {
-          program: "MBA",
-          intake: "60 Seats",
-          duration: "2 Years",
-          type: "Full Time",
+          title: "Approved Intake for A.Y. 2025-26",
+          headers: [
+            "Choice Code",
+            "Choice Code TFWS",
+            "Course Name",
+            "Course Status",
+            "Intake 2025-26",
+            "Intake (AICTE)",
+            "Gov. GR",
+            "University Affiliated",
+            "Final Intake for Admission 2025-26",
+            "Intake Status",
+          ],
+          rows: [
+            [
+              "697610110",
+              "697610111T",
+              "M. B. A.",
+              "Regular",
+              "180",
+              "180",
+              "180",
+              "180",
+              "180",
+              "Approved",
+            ],
+            ["Total", "", "", "", "180", "180", "180", "180", "180", ""],
+          ],
         },
       ],
     },
 
     "Eligibility Criteria": {
-      type: "text",
-      content: `
-Eligibility for admission to the Integrated MCA program requires candidates to have passed 10+2 from any recognized board with Mathematics or Statistics.
+      type: "accordion",
+      content: {
+        Criteria: [
+          {
+            table: true,
+            headers: [
+              "Maharashtra State Candidates",
+              "Jammu & Kashmir Migrant Candidates",
+              "All India Candidates (AI)",
+            ],
+            rows: [
+              [
+                `(i) The candidate should be an Indian National;
 
-Admission is based on merit and institutional selection guidelines. No entrance exam required.`,
+(ii) Passed minimum three-year duration Bachelor’s Degree awarded by any of the Universities recognized by UGC or AIU in any discipline with at least 50% marks in aggregate (45% for backward class categories and PwD of Maharashtra State only);
+
+(iii) Obtained non-zero score in MAH-MBA/MMS-CET.`,
+                `**Obtained non-zero positive score in any one of the following examinations:  
+MAH-MBA/MMS-CET, CAT, CMAT**`,
+                `The candidate should be an Indian National;
+
+Passed minimum three-year duration Bachelor’s Degree awarded by any of the Universities recognized by UGC/AIU with at least 50% marks (45% for backward class categories & PwD of Maharashtra State);
+
+OR
+
+Appeared for final year of any Bachelor's Degree.
+
+Must obtain a non-zero positive score in MAH-MBA/MMS-CET, CAT, CMAT.`,
+              ],
+            ],
+          },
+
+          // NOTES
+          `Note:
+• "Aggregate marks" means the grand total of marks for subjects considered for class declaration by the respective University.  
+• If grades/CGPA are awarded instead of marks, conversion will follow the procedure certified by the respective University/Institution.  
+• Percentage shall be calculated by rounding off to two decimal places.  
+• Candidates belonging to SC, VJ/DT (NT-A), NT-B, NT-C, NT-D, OBC, SBC, SEBC categories must submit “Caste Validity Certificate” issued by Social Welfare Scrutiny Committee.  
+• ST candidates must submit “Tribe Validity Certificate” issued by the Tribal Department Scrutiny Committee.`,
+
+          // DOCUMENTS REQUIRED
+          {
+            title: "Documents Required",
+            list: [
+              "MAH CET 2024 Scorecard",
+              "FC Acknowledgement (Document Verification)",
+              "10th Marksheet",
+              "12th Marksheet",
+              "Undergraduate Marksheet & Provisional Certificate",
+              "Transfer Certificate",
+              "Migration Certificate (if applicable)",
+              "Educational GAP Certificate (if applicable, on ₹100 stamp paper)",
+              "Nationality Certificate (Passport or Certificate from District Magistrate)",
+              "Maharashtra Domicile or Birth Certificate",
+              "Caste Certificate (if applicable)",
+              "Caste Validity Certificate (if applicable)",
+              "EWS / SEBC Certificate (if applicable)",
+              "Income Certificate (if applicable)",
+              "Non-Creamy Layer Certificate (if applicable)",
+              "Aadhar Card",
+              "(Documents applicable for all candidates)",
+            ],
+          },
+
+          {
+            link: true,
+            label: "Click Here: Documents Required",
+            href: "/IGSB/Programmes/Admission-Documents-Required.pdf",
+          },
+        ],
+      },
     },
 
     Faculty: {
@@ -172,10 +281,14 @@ Admission is based on merit and institutional selection guidelines. No entrance 
       content: facultyImages,
       title: "Faculty Members",
     },
-
-    "Syllabus & Course Structure": {
+    Exam: {
       type: "syllabus",
-      content: syllabusList,
+      content: examList,
+    },
+
+    ARA: {
+      type: "syllabus",
+      content: araList,
     },
   };
 
@@ -188,7 +301,7 @@ Admission is based on merit and institutional selection guidelines. No entrance 
         return (
           <div className="space-y-4">
             {Object.entries(data.content).map(([title, items]) => (
-              <div key={title} className="border border-gray-200 rounded-lg">
+              <div key={title} className="border border-gray-300 rounded-lg">
                 <details className="group">
                   <summary className="flex justify-between items-center p-4 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg">
                     <h4 className="font-semibold text-secondary text-lg">
@@ -211,7 +324,7 @@ Admission is based on merit and institutional selection guidelines. No entrance 
                                   {item.headers.map((h, idx) => (
                                     <th
                                       key={idx}
-                                      className="border p-2 font-semibold"
+                                      className="border border-gray-300 p-2 font-semibold"
                                     >
                                       {h}
                                     </th>
@@ -225,7 +338,10 @@ Admission is based on merit and institutional selection guidelines. No entrance 
                                     className="border-b hover:bg-gray-50"
                                   >
                                     {row.map((cell, cIndex) => (
-                                      <td key={cIndex} className="border p-2">
+                                      <td
+                                        key={cIndex}
+                                        className="border border-gray-300 p-2"
+                                      >
                                         {cell}
                                       </td>
                                     ))}
@@ -252,8 +368,39 @@ Admission is based on merit and institutional selection guidelines. No entrance 
                       }
 
                       // NORMAL TEXT
+                      // LIST SUPPORT
+                      if (typeof item === "object" && item.list) {
+                        return (
+                          <ul
+                            key={i}
+                            className="list-disc pl-6 space-y-1 text-gray-700"
+                          >
+                            {item.list.map((l, li) => (
+                              <li key={li}>{l}</li>
+                            ))}
+                          </ul>
+                        );
+                      }
+
+                      // LINK SUPPORT
+                      if (typeof item === "object" && item.link) {
+                        return (
+                          <a
+                            key={i}
+                            href={item.href}
+                            className="text-secondary underline font-medium hover:text-secondary/80 block"
+                          >
+                            {item.label}
+                          </a>
+                        );
+                      }
+
+                      // NORMAL TEXT
                       return (
-                        <p key={i} className="text-gray-700">
+                        <p
+                          key={i}
+                          className="text-gray-700 whitespace-pre-line"
+                        >
                           {item}
                         </p>
                       );
@@ -274,28 +421,42 @@ Admission is based on merit and institutional selection guidelines. No entrance 
         return <p className="text-gray-600 text-lg">{data.content}</p>;
       case "table":
         return (
-          <div className="overflow-x-auto border border-gray-200 rounded-lg">
-            <table className="w-full text-sm text-left">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="p-3 border-b font-semibold">Program</th>
-                  <th className="p-3 border-b font-semibold">Intake</th>
-                  <th className="p-3 border-b font-semibold">Duration</th>
-                  <th className="p-3 border-b font-semibold">Type</th>
-                </tr>
-              </thead>
+          <div className="space-y-6">
+            {data.content.map((tbl, idx) => (
+              <div key={idx}>
+                {tbl.title && (
+                  <h4 className="font-semibold text-secondary text-lg mb-3">
+                    {tbl.title}
+                  </h4>
+                )}
 
-              <tbody>
-                {data.content.map((row, index) => (
-                  <tr key={index} className="border-b hover:bg-gray-50">
-                    <td className="p-3">{row.program}</td>
-                    <td className="p-3">{row.intake}</td>
-                    <td className="p-3">{row.duration}</td>
-                    <td className="p-3">{row.type}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                <div className="overflow-x-auto border border-gray-300 rounded-lg">
+                  <table className="w-full text-sm text-left">
+                    <thead className="bg-gray-50">
+                      <tr>
+                        {tbl.headers.map((h, hi) => (
+                          <th key={hi} className="p-3 border-b font-semibold">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      {tbl.rows.map((row, ri) => (
+                        <tr key={ri} className="border-b hover:bg-gray-50">
+                          {row.map((cell, ci) => (
+                            <td key={ci} className="p-3 border-b">
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ))}
           </div>
         );
 
@@ -305,7 +466,7 @@ Admission is based on merit and institutional selection guidelines. No entrance 
             {data.content.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50"
+                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-300 rounded-lg hover:bg-gray-50"
               >
                 <h5 className="font-semibold text-gray-800">{item.label}</h5>
                 <a
@@ -331,26 +492,39 @@ Admission is based on merit and institutional selection guidelines. No entrance 
               <table className="w-full text-sm text-left border-collapse">
                 <thead className="bg-gray-100 text-gray-700">
                   <tr>
-                    <th className="border p-3">Sr. No.</th>
-                    <th className="border p-3">Lab No.</th>
-                    <th className="border p-3">Lab Name</th>
-                    <th className="border p-3">Total PCs</th>
-                    <th className="border p-3">Configuration</th>
-                    <th className="border p-3">Software Installed</th>
+                    <th className="border border-gray-300 p-3">Sr. No.</th>
+                    <th className="border border-gray-300 p-3">Lab No.</th>
+                    <th className="border border-gray-300 p-3">Lab Name</th>
+                    <th className="border border-gray-300 p-3">Total PCs</th>
+                    <th className="border border-gray-300 p-3">
+                      Configuration
+                    </th>
+                    <th className="border border-gray-300 p-3">
+                      Software Installed
+                    </th>
                   </tr>
                 </thead>
 
                 <tbody>
                   {data.content.map((lab, index) => (
-                    <tr key={index} className="border-b align-top">
-                      <td className="border p-3">{lab.srNo}</td>
-                      <td className="border p-3">{lab.labNo}</td>
-                      <td className="border p-3">{lab.labName}</td>
-                      <td className="border p-3">{lab.totalPCs}</td>
-                      <td className="border p-3 whitespace-pre-line">
+                    <tr
+                      key={index}
+                      className="border-b border-gray-300 align-top"
+                    >
+                      <td className="border border-gray-300 p-3">{lab.srNo}</td>
+                      <td className="border border-gray-300 p-3">
+                        {lab.labNo}
+                      </td>
+                      <td className="border border-gray-300 p-3">
+                        {lab.labName}
+                      </td>
+                      <td className="border border-gray-300 p-3">
+                        {lab.totalPCs}
+                      </td>
+                      <td className="border border-gray-300 p-3 whitespace-pre-line">
                         {lab.configuration}
                       </td>
-                      <td className="border p-3 whitespace-pre-line">
+                      <td className="border border-gray-300 p-3 whitespace-pre-line">
                         {lab.software}
                       </td>
                     </tr>
@@ -358,11 +532,11 @@ Admission is based on merit and institutional selection guidelines. No entrance 
 
                   {/* Total PCs Row */}
                   <tr className="font-semibold bg-gray-50">
-                    <td className="border p-3" colSpan={3}>
+                    <td className="border border-gray-300 p-3" colSpan={3}>
                       Total PCs
                     </td>
-                    <td className="border p-3">75</td>
-                    <td className="border p-3" colSpan={2}></td>
+                    <td className="border border-gray-300 p-3">75</td>
+                    <td className="border border-gray-300 p-3" colSpan={2}></td>
                   </tr>
                 </tbody>
               </table>
@@ -393,7 +567,7 @@ Admission is based on merit and institutional selection guidelines. No entrance 
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* LEFT MENU */}
-          <nav className="lg:col-span-1 bg-white rounded-xl shadow-sm p-6 space-y-2 border border-gray-100 sticky top-24">
+          <nav className="lg:col-span-1 bg-white rounded-xl shadow-sm p-6 space-y-2 border border-gray-300 sticky top-24">
             <h3 className="font-semibold text-gray-800 mb-4 text-lg">
               Quick Links
             </h3>
@@ -414,8 +588,8 @@ Admission is based on merit and institutional selection guidelines. No entrance 
           </nav>
 
           {/* RIGHT CONTENT */}
-          <div className="lg:col-span-3 bg-white rounded-xl shadow-sm p-8 border border-gray-100">
-            <div className="mb-6 pb-4 border-b border-gray-200">
+          <div className="lg:col-span-3 bg-white rounded-xl shadow-sm p-8 border border-gray-300">
+            <div className="mb-6 pb-4 border-b border-gray-300">
               <h3 className="text-2xl font-bold text-secondary">{active}</h3>
             </div>
 

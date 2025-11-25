@@ -213,7 +213,7 @@ export default function MBA() {
         </div>
 
         {/* Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent z-10" />
 
         {/* Content Wrapper */}
         <div className="relative max-w-[1500px] px-6 md:px-12 lg:px-20 z-20">
@@ -299,7 +299,7 @@ export default function MBA() {
             <button
               key={key}
               onClick={() => setSpecialization(key)}
-              className={`px-4 md:px-6 h-14 max-w-[300px] flex items-center justify-center rounded-lg font-semibold text-sm md:text-base text-center border whitespace-normal leading-tight ${
+              className={`px-4 md:px-6 h-14 max-w-[300px] flex items-center justify-center rounded-lg font-semibold text-sm md:text-base text-center border border-gray-300 whitespace-normal leading-tight ${
                 specialization === key
                   ? "bg-secondary text-white"
                   : "bg-gray-100 text-gray-800"
@@ -317,7 +317,7 @@ export default function MBA() {
       <div className="w-full bg-white py-16 text-black">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* LEFT */}
-          <div className="bg-white shadow-sm border p-6 rounded-lg">
+          <div className="bg-white shadow-sm border border-gray-300 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-secondary mb-4">
               {s.title}
             </h2>
@@ -354,7 +354,7 @@ export default function MBA() {
             {s.highlights.map((h, i) => (
               <div
                 key={i}
-                className="bg-white border rounded-xl shadow-sm overflow-hidden"
+                className="bg-white border border-gray-300 rounded-xl shadow-sm overflow-hidden"
               >
                 <div className="w-full h-40 relative">
                   <Image

@@ -183,23 +183,23 @@ export default function StudentInduction() {
   return (
     <div className="space-y-12 w-full">
       {/* Header */}
-      <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-6 pb-6 border-b">
-        {/* Left Column – Title */}
-        <h1 className="text-3xl font-semibold text-[#023b5e]">
+      <div className="pb-6 border-b">
+        {/* Title */}
+        <h1 className="text-3xl font-semibold text-[#023b5e] mb-4">
           Student Induction Program
         </h1>
 
-        {/* Right Column – Buttons */}
-        <div className="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+        {/* Buttons */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
           {YEARS.map((year) => (
             <button
               key={year}
-              className={`whitespace-nowrap px-4 py-2 rounded-lg border text-sm
-                ${
-                  selectedYear === year
-                    ? "bg-secondary text-white border-secondary shadow"
-                    : "bg-white text-[#023b5e] border-gray-300 hover:bg-gray-100"
-                }`}
+              className={`px-4 py-2 rounded-lg border text-sm text-center
+          ${
+            selectedYear === year
+              ? "bg-secondary text-white border-secondary shadow"
+              : "bg-white text-[#023b5e] border-gray-300 hover:bg-gray-100"
+          }`}
               onClick={() => setSelectedYear(year)}
             >
               {year}
