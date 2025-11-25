@@ -20,13 +20,13 @@ export default function HomePage() {
       <AcademicYearSection />
       <RecruitersSection />
 
-      <CampusBeat />
+      {/* <CampusBeat /> */}
       <EnergyInnovation />
       <CollegeUnplugged />
 
       <EventsSection />
-      <CTASection />
-      <InstagramMosaic />
+      {/* <CTASection /> */}
+      {/* <InstagramMosaic /> */}
     </div>
   );
 }

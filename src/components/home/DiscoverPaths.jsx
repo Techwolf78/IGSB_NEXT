@@ -9,23 +9,23 @@ const DiscoverPaths = () => {
   const courses = [
     {
       name: "Human Resource Management",
-      img: "/HRMBA.jpg",
-      link: "/programs/mba/hr",
+      img: "/MBA1.jpg",
+      link: "/MBA1",
     },
     {
       name: "Finance Management",
-      img: "/FinanceMBA.jpg",
-      link: "/programs/mba/finance",
+      img: "/MBA2.jpg",
+      link: "/MBA2",
     },
     {
       name: "Operations & Supply Chain Management",
-      img: "/OSCMBA.jpg",
-      link: "/programs/mba/operations",
+      img: "/MBA3.jpg",
+      link: "/MBA3",
     },
     {
       name: "Marketing Management",
-      img: "/MarketingMBA.jpg",
-      link: "/programs/mba/marketing",
+      img: "/MBA4.jpg",
+      link: "/MBA4",
     },
   ];
 
@@ -68,29 +68,14 @@ const DiscoverPaths = () => {
 
               {/* Course Name */}
               <div className="absolute bottom-0 left-0 right-0">
-                <div className="bg-secondary text-white backdrop-blur-sm rounded-b-lg px-4 py-3 shadow-sm border border-white/20">
-                  <h3 className="flex justify-center text-sm font-semibold text-white truncate text-center">
+                <div className=" text-white backdrop-blur-sm rounded-b-lg px-4 py-3 shadow-sm ">
+                  <h3 className="flex justify-center text-xs font-semibold text-white truncate text-center">
                     {course.name}
                   </h3>
                 </div>
               </div>
 
-              {/* Hover Arrow */}
-              <div className="absolute top-4 right-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <svg
-                  className="w-4 h-4 text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div>
+  
             </Link>
           ))}
         </div>

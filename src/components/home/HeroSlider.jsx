@@ -7,11 +7,11 @@ import toast from "react-hot-toast";
 const HeroSlider = () => {
   // 👉 Load banners directly from /public/banners
   const desktopImages = [
-    "/banners/ICEMBANNER27.jpg",
-    "/banners/ICEMBANNER6.jpg",
-    "/banners/ICEMBANNERCOMP.jpg",
-    "/banners/ICEMBANNERCLASS.jpg",
-    "/banners/ICEMBANNERMECH.jpg",
+    "/banners/BANNER1.jpg",
+    "/banners/BANNER2.jpg",
+    "/banners/BANNER3.jpg",
+    "/banners/BANNER4.jpg",
+    "/banners/BANNER5.jpg",
   ];
 
   const mobileImages = [
@@ -51,7 +51,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full h-[70vh] overflow-hidden">
       {/* ---------------- DESKTOP SLIDER ---------------- */}
       <div className="hidden md:block">
         <div
