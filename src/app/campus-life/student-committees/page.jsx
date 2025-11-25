@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function StudentCommittees() {
   return (
-    <div className="w-full bg-white text-gray-800">
+    <div className="w-full bg-white text-gray-800 scroll-smooth">
       {/* Banner */}
       <div className="relative w-full h-[40vh] sm:h-[50vh] lg:h-[70vh]">
         <Image
@@ -24,7 +24,7 @@ export default function StudentCommittees() {
         ================================= */}
         <section
           id="student-grievance-redressal-committee"
-          className="space-y-6"
+          className="space-y-6 scroll-mt-[15vh]"
         >
           <div className="text-left mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#023b5e] mb-4">
@@ -111,7 +111,10 @@ export default function StudentCommittees() {
         {/* ================================
             2. Anti Ragging Committee
         ================================= */}
-        <section id="anti-ragging-committee" className="space-y-6">
+        <section
+          id="anti-ragging-committee"
+          className="space-y-6 scroll-mt-[15vh]"
+        >
           <div className="text-left mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#023b5e] mb-4">
               Anti Ragging Committee
@@ -239,7 +242,7 @@ export default function StudentCommittees() {
         {/* ================================
             3. Anti Ragging Squad
         ================================= */}
-        <section id="anti-ragging-squad" className="space-y-6">
+        <section id="anti-ragging-squad" className="space-y-6 scroll-mt-[15vh]">
           <div className="text-left mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#023b5e] mb-4">
               Anti Ragging Squad
@@ -297,7 +300,10 @@ export default function StudentCommittees() {
         {/* ================================
             4. Students Welfare Council
         ================================= */}
-        <section id="students-welfare-council" className="space-y-6">
+        <section
+          id="students-welfare-council"
+          className="space-y-6 scroll-mt-[15vh]"
+        >
           <div className="text-left mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#023b5e] mb-4">
               Students Welfare Council
@@ -349,7 +355,7 @@ export default function StudentCommittees() {
         {/* ================================
             5. Student Counsellor
         ================================= */}
-        <section id="student-counsellor" className="space-y-6">
+        <section id="student-counsellor" className="space-y-6 scroll-mt-[15vh]">
           <div className="text-left mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#023b5e] mb-4">
               Student Counsellor
@@ -378,7 +384,7 @@ export default function StudentCommittees() {
 ============================================= */
 function CommitteeTable({ rows }) {
   return (
-    <div className="overflow-hidden rounded-md border border-gray-200 shadow-lg transition-all hover:shadow-xl">
+    <div className="overflow-x-auto rounded-md border border-gray-200 shadow-lg transition-all hover:shadow-xl">
       <table className="min-w-full text-left text-[0.95rem] border-collapse">
         <thead className="bg-secondary text-white">
           <tr>
