@@ -74,15 +74,15 @@ const HeroSlider = () => {
             }}
           >
             <Image
-              src={img}
-              alt="banner"
-              className="w-full h-full object-cover"
-              width={1600}
-              height={700}
-              quality={100}
-              unoptimized
-              priority={i === 0}
-            />
+  src={img}
+  alt="banner"
+  className="w-full h-full object-cover"
+  width={1600}
+  height={700}
+  unoptimized
+  priority={i === 0}
+/>
+
           </div>
         ))}
 

@@ -11,55 +11,45 @@ export default function ScrollCrushWrapper({ Hero, children }) {
 
   useLayoutEffect(() => {
     const hero = heroRef.current;
+    if (!hero) return;
 
-    // Capture original height
     const originalHeight = hero.offsetHeight;
 
     gsap.fromTo(
       hero,
       { height: originalHeight },
       {
-        height: originalHeight * 0.55, // ❗ collapse vertically ONLY
-        borderRadius: "40px",
-        filter: "blur(1.5px)",
+        height: originalHeight * 0.45,  // crush more for full effect
         ease: "none",
         scrollTrigger: {
           trigger: hero,
+          scroller: document.body,
           start: "top top",
           end: "bottom top",
           scrub: true,
+          pin: true,
+          pinSpacing: false,
         },
       }
     );
-
-    // Optional: shadow effect
-    gsap.to(hero, {
-      boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
-      scrollTrigger: {
-        trigger: hero,
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-    });
   }, []);
 
   return (
     <div className="relative">
-
-      {/* HERO (height will collapse only) */}
+      {/* FULL-WIDTH HERO — no rounding, no shadow */}
       <div
         ref={heroRef}
-        className="overflow-hidden will-change-transform will-change-height"
-        style={{ width: "100%" }} // ensure width stays full
+        className="overflow-hidden w-full"
+        style={{
+          borderRadius: "0px",
+          boxShadow: "none",
+        }}
       >
         {Hero}
       </div>
 
-      {/* Other sections follow naturally */}
-      <div className="relative z-20">
-        {children}
-      </div>
+      {/* Push Explore Section down a little */}
+      <div className="relative z-20 pt-12">{children}</div>
     </div>
   );
 }

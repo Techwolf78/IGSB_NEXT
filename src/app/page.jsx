@@ -12,7 +12,6 @@ import EventsSection from "@/components/home/EventSection";
 export default function HomePage() {
   return (
     <div className="bg-white text-gray-900">
-
       <ScrollCrushWrapper Hero={<HeroSlider />}>
         <ExploreSection />
         <DiscoverPaths />
@@ -22,7 +21,6 @@ export default function HomePage() {
         <CollegeUnplugged />
         <EventsSection />
       </ScrollCrushWrapper>
-
     </div>
   );
 }

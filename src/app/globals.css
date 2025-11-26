@@ -2,7 +2,6 @@
 
 
 
-
 /* ============================================================
    ANIMATIONS
 ============================================================ */
@@ -113,7 +112,9 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+  /* ❌ REMOVE THIS:
+     scroll-behavior: smooth; 
+  */
   overflow-x: hidden;
 }
 
