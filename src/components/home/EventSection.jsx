@@ -44,7 +44,7 @@ export default function EventsSection() {
     },
     {
       img: "/events/SportsComplex.JPG",
-      title: "ICEM Sports Complex",
+      title: "IGSB Sports Complex",
       description:
         "A flagship event connecting visionaries, innovators, and learners from diverse industries.",
     },
@@ -85,9 +85,9 @@ export default function EventsSection() {
           ))}
         </div>
 
-        {/* ✅ Gradient fade edges for smooth scroll */}
-        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none" />
+        {/* ✅ Gradient fade edges for smooth scroll
+        <div className="absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none" /> */}
       </div>
 
       {/* 🔹 Animation Keyframes */}

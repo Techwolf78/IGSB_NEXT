@@ -84,7 +84,7 @@ export default function CollegeUnplugged() {
       {
         autoAlpha: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.2,
         ease: "power2.out",
         stagger: 0.12,
         scrollTrigger: {
@@ -184,9 +184,9 @@ export default function CollegeUnplugged() {
   };
 
   return (
-    <div ref={sectionRef} className="bg-white py-10 fade-up">
+    <div ref={sectionRef} className="bg-white py-24 fade-up">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-6 fade-up">Indira College Unplugged</h2>
+        <h2 className="text-4xl font-extrabold text-black  mb-10 fade-up">Indira College Unplugged</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start fade-up">
 

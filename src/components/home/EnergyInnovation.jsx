@@ -68,8 +68,7 @@ const DiscoverSection = () => {
 
         <h2
           className="fade-up text-3xl lg:text-4xl font-extrabold mb-14 
-            bg-gradient-to-r from-cyan-200 to-blue-300 
-            bg-clip-text text-transparent leading-snug"
+            text-white  leading-snug"
         >
           Energy that runs through Everything and Everyone.
         </h2>
@@ -87,7 +86,7 @@ const DiscoverSection = () => {
               <div
                 className="
                   relative z-10 p-5 rounded-xl 
-                  bg-white/5 backdrop-blur-xl 
+                  bg-white/90 backdrop-blur-xl 
                   border border-white/15 
                   shadow-[0_8px_35px_rgba(0,0,0,0.45)]
                   
@@ -112,18 +111,18 @@ const DiscoverSection = () => {
                   "
                 />
 
-                <h3 className="text-white font-semibold text-lg mb-2 text-left">
+                <h3 className="text-gray-800 font-semibold text-lg mb-2 text-left">
                   {card.title}
                 </h3>
 
-                <p className="text-gray-200 text-sm leading-relaxed text-justify flex-grow">
+                <p className="text-gray-700 text-sm leading-relaxed text-justify flex-grow">
                   {card.description}
                 </p>
 
                 <button
                   className="
                     flex items-center gap-2 
-                    text-cyan-200 
+                    text-gray-700 
                     text-sm font-medium 
                     hover:text-white 
                     transition mt-3

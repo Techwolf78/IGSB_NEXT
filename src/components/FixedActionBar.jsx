@@ -10,13 +10,10 @@ const FixedActionBar = () => {
 
   return (
     <>
-      {/* ================= LEFT BAR (UNCHANGED) ================= */}
-      <div className="hidden md:flex fixed bottom-6 left-0 z-[99999] items-center">
-        {/* Your left code stays exactly same */}
-      </div>
+      
 
       {/* ================= RIGHT BAR (NEW) ================= */}
-      <div className="hidden md:flex fixed bottom-8 right-5 z-[99999] items-center">
+      <div className="hidden md:flex fixed bottom-12 right-5 z-[99999] items-center">
         <div
           className="relative flex items-center group"
           onMouseEnter={() => setIsOpenRight(true)}

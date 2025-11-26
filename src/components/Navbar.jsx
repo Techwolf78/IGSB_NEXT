@@ -5,16 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiMenuAlt2, HiX } from "react-icons/hi";
 import { TbExternalLink } from "react-icons/tb";
-import {
-  FiChevronDown,
-  FiChevronUp,
-  FiHome,
-  FiBriefcase,
-  FiUsers,
-  FiMapPin,
-  FiAward,
-  FiInfo,
-} from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const Navbar = () => {
   const [isHelplineOpen, setIsHelplineOpen] = useState(false);
@@ -77,7 +68,10 @@ const Navbar = () => {
               link: "/about/chanakya-edu#about-sces",
             },
 
-            { label: "Indira Group of Institutes ", link: "/about/chanakya-edu#about-campus" },
+            {
+              label: "Indira Group of Institutes ",
+              link: "/about/chanakya-edu#about-campus",
+            },
             {
               label: "Indira Global School of Business",
               link: "/about/chanakya-edu#about-igsb",
@@ -86,8 +80,14 @@ const Navbar = () => {
               label: "Chairperson's Profile & Chief Mentor-IGI",
               link: "/about/chanakya-edu#about-chairperson",
             },
-            { label: "Director's Profile", link: "/about/chanakya-edu#about-director" },
-            { label: "Vision Mission & Values", link: "/about/chanakya-edu#about-vision" },
+            {
+              label: "Director's Profile",
+              link: "/about/chanakya-edu#about-director",
+            },
+            {
+              label: "Vision Mission & Values",
+              link: "/about/chanakya-edu#about-vision",
+            },
             {
               label: "Recognition / Affiliation",
               link: "/about/chanakya-edu#about-recognition",
@@ -271,11 +271,11 @@ const Navbar = () => {
       {content.sections.map((section, index) => (
         <div key={index}>
           {section.title ? (
-            <h3 className="text-lg font-semibold text-secondary mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
               {section.title}
             </h3>
           ) : null}
-          <ul className="space-y-4 text-gray-800 text-sm">
+          <ul className="space-y-4 text-gray-900 text-sm">
             {section.items.map((item, itemIndex) => (
               <li
                 key={itemIndex}
@@ -284,11 +284,11 @@ const Navbar = () => {
                 {item.link ? (
                   <Link
                     href={item.link}
-                    className="font-semibold flex justify-between items-center w-full text-gray-800 hover:text-primary transition-all duration-200 group-hover:translate-x-1"
+                    className="font-semibold flex justify-between items-center w-full text-gray-900 hover:text-primary transition-all duration-200 group-hover:translate-x-1"
                     onClick={() => setActiveDropdown(null)}
                   >
                     <span>{item.label || item}</span>
-                    <TbExternalLink className="font-semibold text-gray-900 transition-transform duration-200 group-hover:scale-110" />
+                    <TbExternalLink className="font-semibold text-gray-900-900 transition-transform duration-200 group-hover:scale-110" />
                   </Link>
                 ) : (
                   <div className="font-semibold flex justify-between items-center w-full text-gray-600">
@@ -327,10 +327,10 @@ const Navbar = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <span>{item.label || item}</span>
-                    <TbExternalLink className="text-gray-500 text-xs transition-transform duration-200 hover:scale-110" />
+                    <TbExternalLink className="text-gray-1000 text-xs transition-transform duration-200 hover:scale-110" />
                   </Link>
                 ) : (
-                  <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-500">
+                  <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-1000">
                     <span>{item.label || item}</span>
                     <TbExternalLink className="text-gray-400 text-xs" />
                   </div>
@@ -348,13 +348,13 @@ const Navbar = () => {
       {/* ===== NAVBAR ===== */}
       <nav
         ref={navbarRef}
-        className="w-full h-[12vh] flex bg-white shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
+        className="w-full h-[12vh] flex bg-secondary text-gray-100 shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
       >
         {/* Left: Logo - 80% width on mobile */}
         <div className="w-full md:w-[30%] h-full flex items-center justify-start md:pl-0 md:justify-center">
           <Link href="/">
             <Image
-              src="/Logo.png"
+              src="/IGSB_logo_white.png"
               alt="Logo"
               height={300}
               width={300}
@@ -368,7 +368,7 @@ const Navbar = () => {
         {/* Right Section - Desktop */}
         <div className="hidden md:flex w-[70%] h-full flex-col">
           {/* Top Bar */}
-          <div className="flex justify-end  w-full h-[45%] text-sm text-black">
+          <div className="flex justify-end  w-full h-[45%] text-xs sm:text-sm ">
             <div className="flex gap-4">
               <div className="flex items-center gap-2 font-semibold">
                 <a
@@ -414,21 +414,20 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </div>
-
               {/* Buttons */}
               <div className="flex">
                 <button
                   onClick={toggleModal}
-                  className="bg-secondary hover:scale-[1.03] text-white px-8 py-3  font-semibold "
+                  className="bg-[#e69a38] text-gray-50 px-8 rounded-bl-lg text-sm font-semibold relative overflow-hidden transition-all duration-300"
                 >
-                  Enquire Now
+                  <span>Enquire Now</span>
                 </button>
               </div>
             </div>
           </div>
 
           {/* Bottom Nav Links */}
-          <div className="flex  justify-end items-center gap-1 h-[55%] text-black px-6 text-md font-semibold whitespace-nowrap ">
+          <div className="flex  justify-end items-center gap-1 h-[55%]  px-6 text-md font-semibold whitespace-nowrap ">
             <div
               className="flex  h-full  items-center gap-1 cursor-pointer hover:text-secondary transition-all duration-200 group"
               onPointerEnter={() => handleMouseEnter("aboutUs")}
@@ -507,7 +506,7 @@ const Navbar = () => {
           <div
             onPointerEnter={() => handleMouseEnter(activeDropdown)}
             onPointerLeave={handleMouseLeave}
-            className="absolute top-full left-0 w-full backdrop-blur-sm bg-white/60 shadow-xl border-t border-gray-200 z-50 hidden md:block animate-in fade-in-0 slide-in-from-top-2 duration-300"
+            className="absolute top-full left-0 w-full backdrop-blur-sm bg-white shadow-xl border-t border-black z-50 hidden md:block animate-in fade-in-0 slide-in-from-top-2 duration-300"
           >
             {renderDropdownContent(dropdownContent[activeDropdown])}
           </div>
@@ -534,11 +533,11 @@ const Navbar = () => {
             style={{ maxHeight: "85vh" }}
           >
             {/* Header with Close Button */}
-            <div className="flex justify-between items-center p-4 border-b border-gray-200">
+            <div className="flex justify-between items-center p-4 border-b border-black">
               <h2 className="text-base font-semibold text-gray-900">Menu</h2>
               <button
                 onClick={toggleMobileMenu}
-                className="text-gray-500 hover:text-gray-700 transition-all duration-300 hover:scale-110"
+                className="text-gray-1000 hover:text-gray-700 transition-all duration-300 hover:scale-110"
               >
                 <HiX size={22} />
               </button>
@@ -612,7 +611,7 @@ const Navbar = () => {
                               className="flex items-center justify-between px-4 py-2 hover:bg-gray-100 transition-all duration-200 hover:translate-x-1"
                             >
                               {item.label}
-                              <TbExternalLink className="text-gray-500 text-xs transition-transform duration-200 hover:scale-110" />
+                              <TbExternalLink className="text-gray-1000 text-xs transition-transform duration-200 hover:scale-110" />
                             </a>
                           </li>
                         ))}
@@ -695,7 +694,7 @@ const Navbar = () => {
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
-                      <TbExternalLink className="text-gray-500 text-xs transition-transform duration-200 hover:scale-110" />
+                      <TbExternalLink className="text-gray-1000 text-xs transition-transform duration-200 hover:scale-110" />
                     </Link>
                   </div>
                 ))}
@@ -708,7 +707,7 @@ const Navbar = () => {
                     toggleModal();
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full bg-gradient-to-r from-[#278da4] to-[#003c84] text-white py-2 text-sm font-semibold rounded-md hover:from-[#278da4]/90 hover:to-[#003c84]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                  className="w-full bg-gradient-to-r from-[#278da4] to-[#003c84] text-gray-100 py-2 text-sm font-semibold rounded-md hover:from-[#278da4]/90 hover:to-[#003c84]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >
                   Enquire Now
                 </button>
@@ -724,7 +723,7 @@ const Navbar = () => {
           isHelplineOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="bg-primary text-white p-4 flex justify-between items-center">
+        <div className="bg-primary text-gray-100 p-4 flex justify-between items-center">
           <h3 className="text-lg font-bold">Admissions Helpline</h3>
           <button
             onClick={toggleHelpline}
@@ -907,7 +906,7 @@ const Navbar = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#E85C0D] hover:bg-[#d14f08] text-white font-semibold py-2 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="w-full bg-[#E85C0D] hover:bg-[#d14f08] text-gray-100 font-semibold py-2 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 SUBMIT
               </button>

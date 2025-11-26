@@ -21,7 +21,7 @@ export default function HomePage() {
         <EnergyInnovation />
         <CollegeUnplugged />
         <EventsSection />
-        <CTASection />
+        {/* <CTASection /> */}
       </ScrollCrushWrapper>
     </div>
   );

@@ -66,17 +66,17 @@ const ExploreSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white relative z-30 pt-20 pb-20"
+      className="w-full bg-white relative z-30 pt-20 pb-10 "
     >
-      <div className="max-w-7xl mx-auto px-4 space-y-10">
+      <div className="max-w-7xl mx-auto space-y-5">
 
         {/* HEADING */}
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] fade-text">
           <div>
             <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 leading-tight">
-              Explore Your Potential with
+              Explore Your Potential At
             </h2>
-            <h2 className="text-2xl lg:text-3xl font-extrabold text-[#003366] mt-1 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-extrabold text-secondary mt-1 leading-tight">
               INDIRA GLOBAL SCHOOL OF BUSINESS
             </h2>
           </div>

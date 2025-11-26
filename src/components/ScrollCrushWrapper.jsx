@@ -39,7 +39,7 @@ export default function ScrollCrushWrapper({ Hero, children }) {
       {/* FULL-WIDTH HERO — no rounding, no shadow */}
       <div
         ref={heroRef}
-        className="overflow-hidden w-full"
+        className=" w-full"
         style={{
           borderRadius: "0px",
           boxShadow: "none",
@@ -49,7 +49,7 @@ export default function ScrollCrushWrapper({ Hero, children }) {
       </div>
 
       {/* Push Explore Section down a little */}
-      <div className="relative z-20 pt-12">{children}</div>
+      <div className="relative z-20 pt-5">{children}</div>
     </div>
   );
 }

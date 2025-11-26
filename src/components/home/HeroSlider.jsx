@@ -55,7 +55,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full min-h-[70vh] h-[70vh] overflow-hidden isolate">
+    <div className="relative w-full min-h-[50vh] h-[50h] sm:min-h-[88vh] sm:h-[88vh] overflow-hidden isolate">
       {/* ---------------- DESKTOP SLIDER ---------------- */}
       <div className="hidden md:block relative w-full h-full">
         {[...desktopImages, desktopImages[0]].map((img, i) => (
@@ -69,20 +69,21 @@ const HeroSlider = () => {
                 : "opacity-0 scale-102"
             }`}
             style={{
-              transform: `scale(${currentIndex === i ? 1 : previousIndex === i ? 1 : 1.02})`,
+              transform: `scale(${
+                currentIndex === i ? 1 : previousIndex === i ? 1 : 1.02
+              })`,
               zIndex: currentIndex === i ? 20 : previousIndex === i ? 10 : 0,
             }}
           >
             <Image
-  src={img}
-  alt="banner"
-  className="w-full h-full object-cover"
-  width={1600}
-  height={700}
-  unoptimized
-  priority={i === 0}
-/>
-
+              src={img}
+              alt="banner"
+              className="w-full h-full object-cover"
+              width={1600}
+              height={700}
+              unoptimized
+              priority={i === 0}
+            />
           </div>
         ))}
 
@@ -119,7 +120,9 @@ const HeroSlider = () => {
                 : "opacity-0 scale-102"
             }`}
             style={{
-              transform: `scale(${currentIndex === i ? 1 : previousIndex === i ? 1 : 1.02})`,
+              transform: `scale(${
+                currentIndex === i ? 1 : previousIndex === i ? 1 : 1.02
+              })`,
               zIndex: currentIndex === i ? 20 : previousIndex === i ? 10 : 0,
             }}
           >
