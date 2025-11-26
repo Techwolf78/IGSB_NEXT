@@ -31,7 +31,6 @@ const DiscoverSection = () => {
     },
   ];
 
-  // GSAP Animations
   useEffect(() => {
     const section = sectionRef.current;
 
@@ -56,7 +55,10 @@ const DiscoverSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 px-6 lg:px-16 overflow-visible bg-gradient-to-b from-[#001829] via-[#002542] to-[#000f1c]"
+      className="
+        relative py-24 px-6 lg:px-16 overflow-visible 
+        bg-secondary
+      "
     >
       <div className="relative max-w-7xl mx-auto text-center z-10">
 
@@ -66,7 +68,8 @@ const DiscoverSection = () => {
 
         <h2
           className="fade-up text-3xl lg:text-4xl font-extrabold mb-14 
-            bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent leading-snug"
+            bg-gradient-to-r from-cyan-200 to-blue-300 
+            bg-clip-text text-transparent leading-snug"
         >
           Energy that runs through Everything and Everyone.
         </h2>
@@ -77,17 +80,10 @@ const DiscoverSection = () => {
           {cards.map((card, index) => (
             <div key={index} className="relative group fade-up">
 
-              {/* Glass Offset Glow */}
-              <div className="
-                absolute inset-0 rounded-xl 
-                translate-x-3 translate-y-3 
-                bg-white/10 
-                blur-xl 
-                opacity-50
-                pointer-events-none
-              "></div>
+              {/* ❌ Removed Glow Offset */}
+              {/* (This div is now deleted) */}
 
-              {/* MAIN GLASS CARD */}
+              {/* Main Card */}
               <div
                 className="
                   relative z-10 p-5 rounded-xl 
@@ -95,15 +91,14 @@ const DiscoverSection = () => {
                   border border-white/15 
                   shadow-[0_8px_35px_rgba(0,0,0,0.45)]
                   
-                  transition-all duration-500
+                  transition-all duration-300
                   group-hover:-translate-y-2 group-hover:-translate-x-2 
-                  group-hover:shadow-[0_12px_45px_rgba(0,255,255,0.25)]
+                  group-hover:shadow-xl
                   
                   flex flex-col
                   h-[500px]
                 "
               >
-                {/* IMAGE */}
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -117,21 +112,18 @@ const DiscoverSection = () => {
                   "
                 />
 
-                {/* TITLE */}
                 <h3 className="text-white font-semibold text-lg mb-2 text-left">
                   {card.title}
                 </h3>
 
-                {/* DESCRIPTION */}
                 <p className="text-gray-200 text-sm leading-relaxed text-justify flex-grow">
                   {card.description}
                 </p>
 
-                {/* BUTTON */}
                 <button
                   className="
                     flex items-center gap-2 
-                    text-cyan-300 
+                    text-cyan-200 
                     text-sm font-medium 
                     hover:text-white 
                     transition mt-3
