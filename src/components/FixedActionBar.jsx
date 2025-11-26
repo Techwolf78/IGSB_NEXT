@@ -23,7 +23,7 @@ const FixedActionBar = () => {
           <div className="relative p-[2px] bg-gradient-to-r from-[#00e5ff] via-[#ff00ea] to-[#00e5ff] bg-[length:200%_100%] animate-glow-border transition-all duration-500 rounded-md">
             <button
               title="Menu"
-              className="relative flex items-center justify-center bg-black text-white p-4 rounded-r-md shadow-lg hover:brightness-110 transition-all duration-300"
+              className="relative flex items-center justify-center bg-black text-white p-4 rounded-md shadow-lg hover:brightness-110 transition-all duration-300"
             >
               <Menu size={22} />
             </button>
