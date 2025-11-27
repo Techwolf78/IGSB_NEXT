@@ -1,16 +1,21 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import FAQSection from "@/components/FAQSections/FAQMBA";
 import Image from "next/image";
 import RecruitersSection from "@/components/home/RecruiterSection";
 import CTASection from "@/components/home/CTASection";
 import ApplyForm from "@/components/home/ApplyForm";
+import { useSearchParams } from "next/navigation";
 
 export default function MBA() {
+  const searchParams = useSearchParams();
+  const specFromURL = searchParams.get("spec");
   const [activeTab, setActiveTab] = useState("admissions");
   const faqRef = useRef(null);
-  const [specialization, setSpecialization] = useState("marketing");
+  const [specialization, setSpecialization] = useState(
+    specFromURL || "marketing"
+  );
   const [isModalOpen, setIsModalOpen] = useState(false); // Added missing state
 
   const scrollToFAQ = () => {
@@ -29,11 +34,15 @@ export default function MBA() {
     document.body.removeChild(link);
   };
 
+  useEffect(() => {
+    if (specFromURL) setSpecialization(specFromURL);
+  }, [specFromURL]);
+
   // Array of MBA highlight images
   const mbaHighlightImages = [
     "/Programs/MBA/MBA1.jpg",
-    "/Programs/MBA/MBA2.jpg", 
-    "/Programs/MBA/MBA3.jpg"
+    "/Programs/MBA/MBA2.jpg",
+    "/Programs/MBA/MBA3.jpg",
   ];
 
   // ==============================
@@ -223,7 +232,11 @@ export default function MBA() {
             </h2>
 
             <p className="mt-4 text-white/80 leading-relaxed max-w-2xl">
-              This rigorous programme is designed to develop strategic thinkers and future business leaders. It combines core management principles with deep specialization, fostering analytical prowess, leadership qualities, and an ethical mindset to drive organizational success in a complex global economy.
+              This rigorous programme is designed to develop strategic thinkers
+              and future business leaders. It combines core management
+              principles with deep specialization, fostering analytical prowess,
+              leadership qualities, and an ethical mindset to drive
+              organizational success in a complex global economy.
             </p>
 
             {/* Buttons */}
