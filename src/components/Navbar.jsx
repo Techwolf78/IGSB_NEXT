@@ -197,10 +197,21 @@ const Navbar = () => {
           title: "MBA",
           items: [
             {
-              label: "Programme & Admission",
-              link: "/programs/mba",
+              label: "Marketing Management",
+              link: "/programs/mba?spec=marketing",
             },
-
+            {
+              label: "Finance Management",
+              link: "/programs/mba?spec=finance",
+            },
+            {
+              label: "Human Resource Management",
+              link: "/programs/mba?spec=hr",
+            },
+            {
+              label: "Operations & Supply Chain Management",
+              link: "/programs/mba?spec=operations",
+            },
             {
               label: "Human Capital/ Intellectual Capital",
               link: "/programs/mba",
@@ -209,7 +220,7 @@ const Navbar = () => {
         },
         {
           title: "PHD",
-          items: [{ label: "Research Center", link: "/programs/mba" }],
+          items: [{ label: "Research Center", link: "/programs/phd" }],
         },
       ],
     },
