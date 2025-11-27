@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import FixedActionBar from "@/components/FixedActionBar";
 import Loader from "@/components/Loader";
 import LenisProvider from "@/components/LenisProvider";
+import { Scroll } from "lucide-react";
+import ScrollToTop from "@/components/ScroolToTop";
 
 export default function RootLayout({ children }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +30,7 @@ export default function RootLayout({ children }) {
         <Loader isLoading={isLoading} />
 
         <Navbar />
+        <ScrollToTop />
         <FixedActionBar />
 
         {/* ✔ Wrap entire scrollable content with Lenis */}
