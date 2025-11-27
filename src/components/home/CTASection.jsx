@@ -45,7 +45,7 @@ export default function CTASection() {
   const { headline, body } = pageContent[pathname] || pageContent["/"];
 
   return (
-    <section className=" bg-secondary text-center text-white py-16 px-6 rounded-2xl max-w-7xl mx-auto my-16 shadow-lg">
+    <section className=" bg-secondary text-center text-white py-16 px-6   mx-auto my-16 shadow-lg">
       <h2 className="text-2xl sm:text-3xl font-bold mb-4">{headline}</h2>
       <p className="text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed text-sm sm:text-base">
         {body}
@@ -62,7 +62,7 @@ export default function CTASection() {
 
         <button
           onClick={handleScrollToForm}
-          className="bg-[#08090a] text-white font-semibold px-8 py-3 rounded-md hover:bg-[#001e4a] transition-colors"
+          className="bg-white text-[#002D72] font-semibold px-8 py-3 hover:bg-gray-100 rounded-md  transition-colors"
         >
           Get in Touch
         </button>

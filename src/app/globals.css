@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 /* ============================================================
    ANIMATIONS
 ============================================================ */
@@ -110,7 +112,9 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+  /* ❌ REMOVE THIS:
+     scroll-behavior: smooth; 
+  */
   overflow-x: hidden;
 }
 
@@ -160,6 +164,7 @@ body {
 ============================================================ */
 .testimonial-card { animation: fadeInUp 0.6s ease-out; }
 .testimonial-card:hover { animation: float 3s ease-in-out infinite; }
+
 
 @keyframes scroll {
   0% {
