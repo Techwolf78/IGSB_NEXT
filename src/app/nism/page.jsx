@@ -172,7 +172,7 @@ export default function NISMPage() {
                   {images.map((src, i) => (
                     <div
                       key={i}
-                      className="relative w-full aspect-square rounded-lg overflow-hidden shadow-sm group"
+                      className="relative h-66 w-full aspect-square rounded-lg overflow-hidden shadow-sm group"
                     >
                       <Image
                         src={src}
