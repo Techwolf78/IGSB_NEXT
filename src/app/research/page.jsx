@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Research() {
-  const [activeTab, setActiveTab] = useState("researchCentre");
+  const [activeTab, setActiveTab] = useState("mdp");
   const [showMoreAchievements, setShowMoreAchievements] = useState(false);
 
   return (
@@ -45,7 +45,7 @@ export default function Research() {
           {/* ===========================
               🔷 TABS
           ============================ */}
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3 py-12">
             {[
               // { id: "researchCentre", label: "IGSB Research Centre" },
               { id: "mdp", label: "MDP" },
@@ -74,198 +74,7 @@ export default function Research() {
           ============================ */}
           <div>
             {/* ===================== RESEARCH CENTRE ===================== */}
-            {activeTab === "researchCentre" && (
-              <div className="space-y-20">
-                {/* ========================= ABOUT SECTION ========================= */}
-                <section className="bg-white p-10 rounded-2xl shadow-lg space-y-6">
-                  <h2 className="text-3xl font-bold text-secondary text-center">
-                    About IGSB Research Centre
-                  </h2>
-
-                  {/* FULL WIDTH TEXT */}
-                  <div className="space-y-4 text-justify text-gray-700">
-                    <p>
-                      Indira Global School of Business (IGSB) is recognized by
-                      AICTE and UGC, and is affiliated with Savitribai Phule
-                      Pune University (SPPU). It was established with a clear
-                      vision to develop globally-oriented researchers capable of
-                      driving sustainable growth in the evolving international
-                      business landscape. Over the years, IGSB has emerged as a
-                      premier B-School in Pune, offering MBA programs. From the
-                      academic year 2025–26, IGSB also offers Doctoral Programs
-                      in Management.
-                    </p>
-
-                    <p>
-                      The IGSB Research Center (PGRC) is a recognized Ph.D.
-                      Research Center, affiliated with SPPU, and is dedicated to
-                      fostering advanced research in the field of management.
-                      The Doctoral Programme in Management plays a pivotal role
-                      in nurturing future scholars, academicians, and industry
-                      researchers by encouraging rigorous inquiry and innovation
-                      across various management domains.
-                    </p>
-
-                    <p>
-                      The aim of the IGSB Research Center is to cultivate a
-                      vibrant research ecosystem that promotes scholarly
-                      inquiry, critical thinking, and innovation in management.
-                      The Center is committed to contributing to the advancement
-                      of knowledge by supporting high-quality doctoral research,
-                      encouraging interdisciplinary collaboration, and
-                      addressing contemporary business and societal challenges
-                      through evidence-based insights.
-                    </p>
-
-                    <p>
-                      The Center offers a Doctoral Programme with
-                      specializations in:
-                    </p>
-
-                    <ul className="list-disc ml-6">
-                      <li>Finance and Accounting</li>
-                      <li>Human Resource Management</li>
-                      <li>Marketing</li>
-                      <li>General Management</li>
-                      <li>
-                        Organizational Behaviour, Operations & Decision Sciences
-                      </li>
-                      <li>
-                        Public Systems, Strategy, Innovation and Management in
-                        Education
-                      </li>
-                    </ul>
-
-                    <p>We strongly encourage multidisciplinary research.</p>
-                  </div>
-
-                  {/* IMAGE FULL WIDTH */}
-                  <div className="w-full rounded-2xl overflow-hidden shadow">
-                    <img
-                      src="/IGSB/Research/IGSBRC/RCBanner.png"
-                      alt="IGSB Research Centre"
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                </section>
-
-                {/* ========================= ADMISSION SECTION ========================= */}
-                <section className="bg-white p-10 rounded-2xl shadow-lg space-y-6">
-                  <h2 className="text-3xl font-bold text-secondary text-center">
-                    Admission Details
-                  </h2>
-
-                  <p className="text-gray-700 text-justify">
-                    Admissions to the program are conducted strictly as per SPPU
-                    norms and guidelines, with vacancy details displayed
-                    transparently as per university notifications before each
-                    admission round.
-                  </p>
-
-                  {/* 🔵 SPPU CIRCULARS */}
-                  <p className="text-gray-700 text-justify">
-                    <strong>SPPU Circulars:</strong> The Research Center
-                    provides comprehensive and up-to-date information through
-                    official SPPU circulars related to Ph.D. programs.
-                  </p>
-                </section>
-
-                {/* ========================= GUIDE SECTION ========================= */}
-                <section className="bg-white p-10 rounded-2xl shadow-lg space-y-6">
-                  <h2 className="text-3xl font-bold text-secondary text-center">
-                    PhD Guides
-                  </h2>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                    {[
-                      [
-                        "Dr. Virendra Tatake",
-                        "Financial Management",
-                        "/IGSB/Research/IGSBRC/PHD1.jpg",
-                      ],
-                      [
-                        "Dr. Pallavi Sajanapwar",
-                        "Marketing Management",
-                        "/IGSB/Research/IGSBRC/PHD2.png",
-                      ],
-                      [
-                        "Dr. Aatish Zagade",
-                        "General Management",
-                        "/IGSB/Research/IGSBRC/PHD3.jpg",
-                      ],
-                      [
-                        "Dr. Priyanka Darekar",
-                        "Human Resource Management",
-                        "/IGSB/Research/IGSBRC/PHD4.png",
-                      ],
-                      [
-                        "Dr. Ashish Vyas",
-                        "Human Resource Management",
-                        "/IGSB/Research/IGSBRC/PHD5.png",
-                      ],
-                    ].map(([name, field, img], i) => (
-                      <div
-                        key={i}
-                        className="bg-gray-50 border rounded-xl shadow p-4 text-center space-y-3"
-                      >
-                        <div className="w-full h-36 rounded-lg overflow-hidden ">
-                          <img
-                            src={img}
-                            alt={name}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-
-                        <p className="font-semibold text-secondary">{name}</p>
-                        <p className="text-gray-600 text-sm">{field}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
-                {/* ========================= ACTIVITIES SECTION ========================= */}
-                <section className="bg-white p-10 rounded-2xl shadow-lg space-y-6">
-                  <h2 className="text-3xl font-bold text-secondary text-center">
-                    Research Centre Activities
-                  </h2>
-
-                  <p className="text-gray-700 text-justify">
-                    On 5th June 2025, we invited Dr. Abhijit Chandratreya,
-                    Deputy Director (PGRC) IIMP for a guidance session. All
-                    teaching faculties of Indira Global School of Business had
-                    the privilege to receive guidance from Dr. Abhijit
-                    Chandratreya.
-                  </p>
-
-                  <p className="text-gray-700 text-justify">
-                    Dr. Ashish Vyas, Coordinator - IGSB Research Center,
-                    welcomed Guest Dr. Abhijit Chandratreya, Deputy Director
-                    (PGRC) IIMP; Dr. Virendra Tatake, Director, IGSB; Dr.
-                    Pallavi Sajanapwar, Dean Research and Academics, IGSB; and
-                    all the faculties of IGSB.
-                  </p>
-
-                  <p className="text-gray-700 text-justify">
-                    The guidance session covered eligibility for the entrance
-                    test for Ph.D. program, who should pursue Ph.D., and its
-                    benefits. The event was held under the heading{" "}
-                    <strong>
-                      Guidance Program for Research Guides and Scholars
-                    </strong>
-                    .
-                  </p>
-
-                  {/* IMAGE */}
-                  <div className="w-full max-w-7xl mx-auto rounded-2xl overflow-hidden shadow">
-                    <img
-                      src="/IGSB/Research/IGSBRC/Activities.png"
-                      alt="Guidance Program"
-                      className="w-full h-106 object-cover object-top"
-                    />
-                  </div>
-                </section>
-              </div>
-            )}
+           
 
             {/* ===================== MDP ===================== */}
             {activeTab === "mdp" && (
