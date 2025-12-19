@@ -36,17 +36,17 @@ export default function EventsSection() {
   }, []);
 
   return (
-    <section className="w-full bg-gray-50 py-16 overflow-hidden">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-10">
+    <section className="w-full bg-gray-50 py-4 md:py-10 overflow-hidden">
+      <h2 className="text-2xl sm:text-4xl font-bold text-center text-gray-900">
         Academic Conferences & Campus Events
       </h2>
 
-      <div className="relative w-full overflow-visible py-10">
+      <div className="relative w-full overflow-visible py-6">
 
         {/* TRIPLE DUPLICATION FOR PERFECT LOOP */}
-        <div ref={marqueeRef} className="marquee flex px-6">
+        <div ref={marqueeRef} className="marquee flex">
           {[...events, ...events, ...events].map((event, index) => (
-            <div key={index} className="card-wrapper mr-6 flex-shrink-0">
+            <div key={index} className="card-wrapper px-4 flex-shrink-0">
               <div className="card w-[280px] sm:w-[320px] md:w-[360px] bg-white rounded-xl shadow-md border border-gray-100 transition-all duration-300">
                 <div className="relative w-full h-44 sm:h-52 md:h-56 lg:h-64 rounded-t-xl overflow-hidden">
                   <Image src={event.img} alt={event.title} fill className="object-cover" />

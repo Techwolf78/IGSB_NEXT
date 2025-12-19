@@ -65,7 +65,7 @@ export default function ApplyForm({ variant = "card" }) {
       }`}
     >
       {!isModal && (
-        <h3 className="text-xl font-semibold text-secondary mb-6 text-center">
+        <h3 className="text-2xl font-semibold text-secondary mb-6 text-center">
           Enquire Now
         </h3>
       )}

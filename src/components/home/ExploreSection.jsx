@@ -18,9 +18,6 @@ const ExploreSection = () => {
   useEffect(() => {
     const section = sectionRef.current;
 
-    // ================================
-    // 1️⃣ TEXT & HEADING FADE-IN
-    // ================================
     gsap.fromTo(
       section.querySelectorAll(".fade-text"),
       { autoAlpha: 0, y: 40 },
@@ -38,9 +35,6 @@ const ExploreSection = () => {
       }
     );
 
-    // ================================
-    // 2️⃣ LOGOS – STAGGER RIGHT ➜ LEFT
-    // ================================
     gsap.fromTo(
       section.querySelectorAll(".fade-logo"),
       { autoAlpha: 0, x: 60 },
@@ -51,7 +45,7 @@ const ExploreSection = () => {
         ease: "power3.out",
         stagger: {
           each: 0.25,
-          from: "end", // 👉 Right-to-left
+          from: "end",
         },
         scrollTrigger: {
           trigger: section.querySelector(".logos-wrapper"),
@@ -65,28 +59,28 @@ const ExploreSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white relative z-30 pt-20 pb-10 "
+      className="w-full bg-white relative z-30 pt-10 sm:pt-16 lg:pt-20  sm:pb-10 px-4 md:px-8"
     >
-      <div className="max-w-7xl mx-auto space-y-5">
+      <div className="max-w-7xl mx-auto   space-y-6">
 
         {/* HEADING */}
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] fade-text">
           <div>
-            <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 leading-tight">
+            <h2 className="text-2xl sm:text-2xl lg:text-4xl font-semibold text-gray-800 leading-tight">
               Explore Your Potential At
             </h2>
-            <h2 className="text-2xl lg:text-3xl font-extrabold text-secondary mt-1 leading-tight">
+            <h2 className="text-2xl sm:text-2xl lg:text-4xl font-extrabold text-secondary mt-1 leading-tight">
               INDIRA GLOBAL SCHOOL OF BUSINESS
             </h2>
           </div>
         </div>
 
         {/* TEXT + LOGOS */}
-        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8 lg:gap-10">
 
           {/* TEXT */}
           <div className="fade-text">
-            <p className="text-gray-700 text-lg lg:text-xl leading-relaxed text-justify">
+            <p className="text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed text-justify">
               Located near Pune, Indira Global School of Business one of the
               leading NAAC-accredited MBA institution that offers a rich blend
               of management education and research driven learning. Choose from
@@ -99,7 +93,7 @@ const ExploreSection = () => {
           </div>
 
           {/* LOGOS */}
-          <div className="logos-wrapper flex gap-6 justify-start lg:justify-center items-start">
+          <div className="logos-wrapper flex flex-row  gap-4 sm:gap-6 justify-center lg:justify-center items-center lg:items-start">
             {logos.map((logo, index) => (
               <div
                 key={index}
@@ -108,9 +102,9 @@ const ExploreSection = () => {
                 <Image
                   src={logo.img}
                   alt={logo.title}
-                  width={150}
-                  height={150}
-                  className="object-contain drop-shadow"
+                  width={140}
+                  height={140}
+                  className="object-contain drop-shadow w-24 sm:w-28 lg:w-36 h-auto"
                 />
               </div>
             ))}

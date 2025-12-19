@@ -13,10 +13,10 @@ const ProgramList = () => {
   ];
 
   return (
-    <div className="h-full flex flex-col bg-white rounded-lg p-6 sm:p-8 shadow-sm border border-gray-200">
+    <div className="h-full flex flex-col bg-white rounded-lg px-4 md:px-8 py-6 shadow-sm border border-gray-200">
 
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+      <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3">
         ACADEMIC <span className="text-secondary">YEAR 2026-27</span>
       </h2>
 
