@@ -40,7 +40,7 @@ const DiscoverSection = () => {
       {
         autoAlpha: 1,
         y: 0,
-        duration: 1,
+        duration: 0.9,
         ease: "power3.out",
         stagger: 0.15,
         scrollTrigger: {
@@ -56,46 +56,38 @@ const DiscoverSection = () => {
     <section
       ref={sectionRef}
       className="
-        relative py-24 px-6 lg:px-16 overflow-visible 
-        bg-secondary
+        relative py-14 sm:py-20 px-4 md:px-8
+        bg-secondary overflow-hidden
       "
     >
-      <div className="relative max-w-7xl mx-auto text-center z-10">
+      <div className="max-w-7xl mx-auto text-center">
 
-        <h2 className="fade-up text-3xl lg:text-3xl font-extrabold text-white mb-2">
+        <h2 className="fade-up text-2xl sm:text-4xl font-extrabold text-white mb-2">
           At Indira College, you will discover an
         </h2>
 
-        <h2
-          className="fade-up text-3xl lg:text-4xl font-extrabold mb-14 
-            text-white  leading-snug"
-        >
+        <h2 className="fade-up text-2xl sm:text-4xl font-extrabold text-white mb-10 sm:mb-14">
           Energy that runs through Everything and Everyone.
         </h2>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
 
           {cards.map((card, index) => (
             <div key={index} className="relative group fade-up">
 
-              {/* ❌ Removed Glow Offset */}
-              {/* (This div is now deleted) */}
-
-              {/* Main Card */}
               <div
                 className="
-  relative z-10 p-5 rounded-xl 
-  bg-white/90 group-hover:bg-[#A7F3D0]/90 backdrop-blur-xl 
-  border border-white/15 
-  shadow-[0_8px_35px_rgba(0,0,0,0.45)]
-  transition-all duration-300
-  group-hover:-translate-y-2 group-hover:-translate-x-2 
-  group-hover:shadow-xl
-  flex flex-col
-  h-[500px]
-"
-
+                  relative z-10 rounded-xl
+                  bg-white/90 backdrop-blur-xl
+                  border border-white/20
+                  shadow-[0_6px_28px_rgba(0,0,0,0.35)]
+                  transition-all duration-300
+                  flex flex-col
+                  p-4 sm:p-5
+                  hover:shadow-xl
+                  sm:group-hover:-translate-y-2 sm:group-hover:-translate-x-2
+                "
               >
                 <Image
                   src={card.image}
@@ -103,14 +95,14 @@ const DiscoverSection = () => {
                   width={500}
                   height={260}
                   className="
-                    object-cover w-full h-56
-                    rounded-lg mb-4
+                    w-full object-cover rounded-lg mb-4
+                    h-44 sm:h-52 lg:h-56
                     transition-transform duration-500
-                    group-hover:scale-105
+                    sm:group-hover:scale-105
                   "
                 />
 
-                <h3 className="text-gray-800 font-semibold text-lg mb-2 text-left">
+                <h3 className="text-gray-800 font-semibold text-base sm:text-lg mb-2 text-left">
                   {card.title}
                 </h3>
 
@@ -120,11 +112,10 @@ const DiscoverSection = () => {
 
                 <button
                   className="
-                    flex items-center gap-2 
-                    text-gray-700 
-                    text-sm font-medium 
-                    hover:text-white 
-                    transition mt-3
+                    mt-4 text-sm font-medium text-gray-700
+                    hover:text-gray-900
+                    transition
+                    flex items-center gap-2
                   "
                 >
                   Know more ↗

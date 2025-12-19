@@ -16,11 +16,11 @@ export default function ProgrammesSection() {
   // Marketing Management
   // Business Analytics
   return (
-    <div className="w-full bg-white py-16"> {/* FULL-WIDTH WHITE BACKGROUND */}
-      <section className="w-full max-w-7xl mx-auto px-4">
+    <div className="w-full bg-white "> {/* FULL-WIDTH WHITE BACKGROUND */}
+      <section className="w-full max-w-7xl mx-auto px-4 md:px-8">
 
         {/* ⭐ Heading Added */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-secondary mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-secondary py-4 ">
           MBA Specializations
         </h2>
 
